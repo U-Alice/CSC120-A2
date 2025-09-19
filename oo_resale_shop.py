@@ -65,6 +65,17 @@ def main():
         memory=64
     )
 
+    computer_2 = Computer(
+        id=0,
+        year_made=2013,
+        price=1500,
+        operating_system="macOS Big Sur",
+        description="Mac Pro (Late 2013)",
+        processor_type="3.5 GHc 6-Core Intel Xeon E5",
+        hard_drive_capacity=1024,
+        memory=64
+    )
+
     # Print a little banner
     print("-" * 21)
     print("ALICE's COMPUTER RESALE STORE")
@@ -73,6 +84,7 @@ def main():
     # Adding to resale store
     print("Adding to inventory...")
     computer_id = shop.buy(computer)
+    computer2_id = shop.buy(computer_2)
     # print("Done.\n")
 
     # Checking inventory
